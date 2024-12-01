@@ -1,0 +1,17 @@
+img = cv2.imread('mediafiles/blue_background.webp')
+
+ball_pos = []
+for x in range(10,1010,50):
+    ball_pos.append((x,150))
+
+for pos in ball_pos:
+    cv2.circle(img, pos,10, (150,0,150), -1)
+    predict = kf.prediction(kf, pos[0], pos[1])
+    cv2.circle(img, predict, 10, (0, 150, 150), 6)
+
+for i in range(5):
+    predict = kf.prediction(kf, predict[0], predict[1])
+    cv2.circle(img, predict, 10, (0, 150, 150), 6)
+
+cv2.imshow("Image", img)
+cv2.waitKey(0)
