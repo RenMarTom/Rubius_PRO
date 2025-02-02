@@ -1,0 +1,37 @@
+.header_img{
+    height: 75px;
+    width: 90px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5)
+}
+
+.footer_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    border: 5px solid #fff;
+    box-shadow: 0 1px 15px rgba(0,0,0,0.3)
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    flex: 1 1 auto;
+}
+
+footer{
+    padding: 40px 40px;
+}
+
+.content{
+
+}
